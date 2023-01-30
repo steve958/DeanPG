@@ -1,0 +1,39 @@
+.side-bar-container {
+    position: fixed;
+    right: 0;
+    top: 20vh;
+    width: 18vw;
+    height: 60vh;
+    background-color: whitesmoke;
+    z-index: 20;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #454545;
+    animation: slideSideBar 1s 1;
+}
+
+.side-bar-container img {
+    width: 80%;
+    margin: 15px;
+}
+
+@keyframes slideSideBar {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 18vw;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
