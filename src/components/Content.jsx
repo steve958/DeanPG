@@ -120,7 +120,7 @@ const Content = () => {
             </div>
             {galleryCover && <div className="covering-div" onClick={() => setGalleryCover(false)}><p>kliknite da vidite slike naših projekata</p></div>}
             <div className="carousel-container">
-                <Carousel cols={4} rows={1} gap={10} showDots={true} loop mobileBreakpoint={350} responsiveLayout={[
+                <Carousel cols={4} rows={1} gap={10} showDots={true} loop responsiveLayout={[
                     {
                         breakpoint: 1000,
                         cols: 4,
@@ -137,7 +137,7 @@ const Content = () => {
                         rows: 2,
                         gap: 10,
                     }
-                ]}>
+                ]} mobileBreakpoint={350}>
                     <Carousel.Item>
                         <img width="100%" src="https://picsum.photos/400/300?random=1" />
                     </Carousel.Item>

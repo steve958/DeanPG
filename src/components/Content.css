@@ -290,6 +290,7 @@
     font-size: 40px;
     color: whitesmoke;
     cursor: pointer;
+    text-align: center;
 }
 
 .description {
@@ -543,6 +544,45 @@
     border: 2px solid red;
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .construction-display {
+        text-align: center;
+        width: 100%;
+    }
+
+    .renovation-display {
+        text-align: center;
+        width: 100%;
+    }
+
+    .houses-display {
+        width: 100%;
+    }
+
+    .construction-img {
+        clip-path: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: center;
+    }
+
+    .renovation-img {
+        clip-path: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: center;
+    }
+
+    .houses-img {
+        clip-path: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-position: center;
+    }
+}
+
+
 @media only screen and (max-width: 1120px) {
     .motivation-msg {
         top: 40vh;
@@ -561,6 +601,48 @@
 
     .description-text {
         font-size: 18px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .images-section {
+        margin-left: 20px;
+    }
+
+    .houses-display {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        padding: 20px;
+
+    }
+
+    .renovation-display {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
+    .construction-display {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
+    .contact-background {
+        width: 100%;
+    }
+
+    .contact-section {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 60%;
     }
 
 }
@@ -588,7 +670,12 @@
     }
 
     .images-section {
-        width: 80vw;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-left: 0;
     }
 
     .description-text {
@@ -610,6 +697,60 @@
         opacity: 0.3;
         top: 175vh;
     }
+
+    .about-icons {
+        font-size: 15px;
+    }
+
+    .home-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .contact-icons {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        bottom: 580px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .info-box input {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .msg-box textarea {
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .msg-box {
+        margin: 0 auto;
+    }
+
+    .send-msg {
+        font-size: 15px;
+        position: relative;
+        top: -20px;
+    }
+
+    .send-msg:active {
+        font-size: 13px;
+    }
+
 }
 
 
@@ -618,12 +759,21 @@
         font-size: 15px;
     }
 
-    .contact-btn {
-        font-size: 15px;
-    }
-
     .about-text span {
         width: 90vw;
         left: 0;
+    }
+
+    .description-text {
+        font-size: 12px;
+    }
+
+    .about-icons {
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    .covering-div {
+        font-size: 20px;
     }
 }

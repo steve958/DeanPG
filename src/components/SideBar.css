@@ -3,7 +3,7 @@
     right: 0;
     top: 20vh;
     width: 18vw;
-    height: 60vh;
+    height: 62vh;
     background-color: whitesmoke;
     z-index: 20;
     border-radius: 5px;
@@ -17,8 +17,27 @@
 }
 
 .side-bar-container img {
-    width: 80%;
-    margin: 15px;
+    width: 300px;
+    margin: 10px;
+    animation: slideSideBarImg 2s 1;
+}
+
+.covering-sidebar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #454545;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.covering-text {
+    color: gold;
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
 }
 
 @keyframes slideSideBar {
@@ -28,6 +47,16 @@
 
     100% {
         width: 18vw;
+    }
+}
+
+@keyframes slideSideBarImg {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 300px;
     }
 }
 
