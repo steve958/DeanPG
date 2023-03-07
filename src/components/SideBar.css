@@ -20,6 +20,8 @@
     width: 300px;
     margin: 10px;
     animation: slideSideBarImg 2s 1;
+    /* opacity: 0.4;
+    filter: blur(4px); */
 }
 
 .covering-sidebar {

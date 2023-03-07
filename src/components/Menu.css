@@ -44,6 +44,27 @@
     animation: hummering 0.8s infinite;
 }
 
+.realestate {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    background-color: gold;
+    border-radius: 5px;
+    border: 2px solid #454545;
+
+}
+
+.realestate p {
+    margin: 0;
+}
+
+.immobilien {
+    font-size: 18px;
+}
+
+
 @keyframes hummering {
     0% {
         transform: rotate(-30deg);

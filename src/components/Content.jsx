@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import './Content.css'
-import Carousel from 'better-react-carousel'
 import { MdOutlineHighQuality, MdOutlineAlternateEmail } from 'react-icons/md'
 import { RiMoneyEuroBoxLine } from 'react-icons/ri'
 import { IoMdTimer } from 'react-icons/io'
@@ -95,9 +94,9 @@ const Content = () => {
                     <span>
                         <p>Naše</p><p className="yellow-text">usluge</p>
                     </span>
-                    <p className="description">Naša tvrtka je specijalizirana za izgradnju zgrada,
-                        infrastrukture i drugih objekata. Tvrtka zapošljava tim kvalificiranih
-                        radnika, kao što su stolari, električari, vodoinstalateri i drugi radnici,
+                    <p className="description">Naša tvrtka je specijalizirana za izgradnju
+                        stambenih objekata. Tvrtka zapošljava tim kvalificiranih
+                        radnika, kao što su zidari, stolari, keramicari, električari, vodoinstalateri i drugi djelatnici,
                         za dovršavanje građevinskih projekata.</p>
                     <div className="images-section">
                         <div className="renovation-img"
@@ -120,32 +119,7 @@ const Content = () => {
             </div>
             {galleryCover && <div className="covering-div" onClick={() => setGalleryCover(false)}><p>kliknite da vidite slike naših projekata</p></div>}
             <div className="carousel-container">
-                <Carousel cols={4} rows={1} gap={10} showDots={true} loop>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=1" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=2" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width="100%" src="https://picsum.photos/400/300?random=3" />
-                    </Carousel.Item>
-                </Carousel>
+                <p>carousel</p>
             </div>
         </div>
         <div className="about-section">
@@ -210,24 +184,6 @@ const Content = () => {
     </div >
 }
 
-// responsiveLayout = {
-//     [
-//     {
-//         breakpoint: 1000,
-//         cols: 4,
-//         rows: 2,
-//         gap: 10,
-//     }, {
-//         breakpoint: 750,
-//         cols: 3,
-//         rows: 2,
-//         gap: 20,
-//     }, {
-//         breakpoint: 550,
-//         cols: 2,
-//         rows: 2,
-//         gap: 10,
-//     }
-//     ]}
+
 
 export default Content
