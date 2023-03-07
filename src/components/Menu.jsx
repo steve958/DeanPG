@@ -32,12 +32,12 @@ const Menu = () => {
             {hoverItem === 'o nama' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('kontakt')} onClick={handleContactClick}>Kontakt
             {hoverItem === 'kontakt' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
-        {/* <div className="realestate menu-item">
+        <div className="realestate menu-item">
             <p>
                 Prodaja nekretnina
             </p>
             <p className="immobilien">Real Estate / Immobilien</p>
-        </div> */}
+        </div>
     </div >
 }
 

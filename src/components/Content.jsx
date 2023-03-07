@@ -119,7 +119,26 @@ const Content = () => {
             </div>
             {galleryCover && <div className="covering-div" onClick={() => setGalleryCover(false)}><p>kliknite da vidite slike naših projekata</p></div>}
             <div className="carousel-container">
-                <p>carousel</p>
+                <img src="../src/assets/1.jpg" alt="oops" />
+                <img src="../src/assets/2.jpg" alt="oops" />
+                <img src="../src/assets/3.jpg" alt="oops" />
+                <img src="../src/assets/4.jpg" alt="oops" />
+                <img src="../src/assets/5.jpg" alt="oops" />
+                <img src="../src/assets/6.jpg" alt="oops" />
+                <img src="../src/assets/7.jpg" alt="oops" />
+                <img src="../src/assets/8.jpg" alt="oops" />
+                <img src="../src/assets/9.jpg" alt="oops" />
+                <img src="../src/assets/10.jpg" alt="oops" />
+                <img src="../src/assets/11.jpg" alt="oops" />
+                <img src="../src/assets/12.jpg" alt="oops" />
+                <img src="../src/assets/13.jpg" alt="oops" />
+                <img src="../src/assets/14.jpg" alt="oops" />
+                <img src="../src/assets/15.jpg" alt="oops" />
+                <img src="../src/assets/16.jpg" alt="oops" />
+                <img src="../src/assets/17.jpg" alt="oops" />
+                <img src="../src/assets/18.jpg" alt="oops" />
+                <img src="../src/assets/19.jpg" alt="oops" />
+                <img src="../src/assets/20.jpg" alt="oops" />
             </div>
         </div>
         <div className="about-section">
