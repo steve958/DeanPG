@@ -513,6 +513,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .contact-text {
@@ -830,7 +831,7 @@
     }
 
     .social-icons {
-        bottom: 580px;
+        bottom: 565px;
     }
 
     .contact-form {

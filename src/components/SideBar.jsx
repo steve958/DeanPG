@@ -4,27 +4,32 @@ import { RiCloseCircleFill } from 'react-icons/ri'
 import { useState } from 'react'
 
 function SideBar(props) {
+
+    const { setRealEstateActive, setSideBarActive, realEstateActive } = props
+
     const [hoverAction, setHoverAction] = useState(false)
-    const [moreInfoClicked, setMoreInfoClicked] = useState(false)
+
 
     function handleClick() {
         setHoverAction(false)
-        setMoreInfoClicked(true)
+        setRealEstateActive(true)
     }
+
+    function handleClose(e) {
+        e.stopPropagation()
+        setSideBarActive(false)
+    }
+
 
     return (
         <div className='side-bar-container'
-            style={{
-                width: moreInfoClicked ? '100vw' : null,
-                height: moreInfoClicked ? '70vh' : null
-            }}
-            onMouseEnter={() => !moreInfoClicked && setHoverAction(true)}
-            onMouseLeave={() => !moreInfoClicked && setHoverAction(false)}
+            onMouseEnter={() => !realEstateActive && setHoverAction(true)}
+            onMouseLeave={() => !realEstateActive && setHoverAction(false)}
             onClick={handleClick}>
             {hoverAction && <div className='covering-sidebar'>
             </div>}
             {hoverAction && <p className='covering-text'>kliknite za više informacija</p>}
-            <span className='close-btn' onClick={() => props.setSideBarActive(false)}>
+            <span className='close-btn' onClick={(e) => handleClose(e)}>
                 <RiCloseCircleFill size={25} color='gold' />
             </span>
             <p>prodaja nekretnina</p>

@@ -3,10 +3,11 @@ import { useState } from "react";
 import './Menu.css'
 import { TfiHummer } from 'react-icons/tfi'
 
-const Menu = () => {
+const Menu = (props) => {
+
+    const { setRealEstateActive } = props
 
     const [hoverItem, setHoverItem] = useState('pocetna')
-
 
     function handleContactClick() {
         const element = document.getElementsByClassName('about-icons')
@@ -23,6 +24,10 @@ const Menu = () => {
         element[0].scrollIntoView({ behavior: 'smooth' })
     }
 
+    function handleRealEstateClick() {
+        setRealEstateActive(true)
+    }
+
     return <div className="menu-container">
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('pocetna')} >Početna
             {hoverItem === 'pocetna' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
@@ -32,7 +37,8 @@ const Menu = () => {
             {hoverItem === 'o nama' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('kontakt')} onClick={handleContactClick}>Kontakt
             {hoverItem === 'kontakt' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
-        <div className="realestate menu-item">
+        <div className="realestate menu-item"
+            onClick={handleRealEstateClick}>
             <p>
                 Prodaja nekretnina
             </p>

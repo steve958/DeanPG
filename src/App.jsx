@@ -5,19 +5,29 @@ import Menu from './components/Menu'
 import Content from './components/Content'
 import SideBar from './components/SideBar'
 import { useEffect } from 'react'
+import RealEstate from './components/RealEstate'
 
 function App() {
   const [sideBarActive, setSideBarActive] = useState(false)
+  const [realEstateActive, setRealEstateActive] = useState(false)
 
   useEffect(() => {
-    setTimeout(() => setSideBarActive(true), 10000)
+    if (!realEstateActive) {
+      setTimeout(() => setSideBarActive(true), 10000)
+    }
   }, [])
 
   return (
     <div className="App">
       <Header />
-      <Menu />
-      {sideBarActive && <SideBar setSideBarActive={setSideBarActive} />}
+      <Menu setRealEstateActive={setRealEstateActive} />
+      {realEstateActive &&
+        <RealEstate setRealEstateActive={setRealEstateActive} />}
+      {sideBarActive && !realEstateActive &&
+        <SideBar
+          setRealEstateActive={setRealEstateActive}
+          setSideBarActive={setSideBarActive}
+          realEstateActive={realEstateActive} />}
       <Content />
     </div>
   )

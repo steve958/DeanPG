@@ -1,0 +1,109 @@
+.realestate-modal {
+    position: fixed;
+    margin: 10px;
+    top: 10vh;
+    margin: 0 auto;
+    left: 3vw;
+    width: 94vw;
+    height: 85vh;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid gold;
+    z-index: 20;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #454545;
+    overflow: auto;
+}
+
+.modal-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.heading1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 0;
+    color: #000000;
+}
+
+.heading2 {
+    font-size: 28px;
+    margin: 0;
+    color: #000000;
+}
+
+.modal-content {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.estate-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+
+.estate-section {
+    width: 450px;
+    height: 450px;
+    border: 2px solid gold;
+}
+
+
+.estate-section:hover {
+    transition: all 0.5s;
+    position: sticky;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.object1 {
+    background-image: url('../assets/1.jpg');
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object2 {
+    background-image: url('../assets/2.jpg');
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object3 {
+    background-image: url('../assets/3.jpg');
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}

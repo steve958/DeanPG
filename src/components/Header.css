@@ -9,18 +9,17 @@
     position: relative;
 }
 
-
 .logo {
-    background-image: url('../assets/logo-project.png');
+    background-image: url('../assets/Novilogo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     position: absolute;
-    left: 50px;
+    left: 0;
     top: -10px;
-
+    filter: brightness(1.5);
 }
 
 .informations-container {
@@ -85,9 +84,9 @@
 
     .logo {
         left: 0;
-        top: 22vh;
-        width: 150px;
-        height: 150px;
+        top: 15vh;
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -99,6 +98,13 @@
         align-items: center;
         justify-content: center;
     }
+
+    .logo {
+        top: 25vh;
+        width: 100px;
+        height: 100px;
+    }
+
 
     .social-icons-container {
         width: 20vw;

@@ -43,8 +43,6 @@ const Content = () => {
         return () => observer.unobserve(ref.current)
     }, [ref])
 
-
-
     const [renovationHover, setRenovationHover] = useState(false)
     const [constructionHover, setConstructionHover] = useState(false)
     const [housesHover, setHousesHover] = useState(false)
