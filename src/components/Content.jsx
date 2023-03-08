@@ -119,26 +119,26 @@ const Content = () => {
             </div>
             {galleryCover && <div className="covering-div" onClick={() => setGalleryCover(false)}><p>kliknite da vidite slike naših projekata</p></div>}
             <div className="carousel-container">
-                <img src="../src/assets/1.jpg" alt="oops" />
-                <img src="../src/assets/2.jpg" alt="oops" />
-                <img src="../src/assets/3.jpg" alt="oops" />
-                <img src="../src/assets/4.jpg" alt="oops" />
-                <img src="../src/assets/5.jpg" alt="oops" />
-                <img src="../src/assets/6.jpg" alt="oops" />
-                <img src="../src/assets/7.jpg" alt="oops" />
-                <img src="../src/assets/8.jpg" alt="oops" />
-                <img src="../src/assets/9.jpg" alt="oops" />
-                <img src="../src/assets/10.jpg" alt="oops" />
-                <img src="../src/assets/11.jpg" alt="oops" />
-                <img src="../src/assets/12.jpg" alt="oops" />
-                <img src="../src/assets/13.jpg" alt="oops" />
-                <img src="../src/assets/14.jpg" alt="oops" />
-                <img src="../src/assets/15.jpg" alt="oops" />
-                <img src="../src/assets/16.jpg" alt="oops" />
-                <img src="../src/assets/17.jpg" alt="oops" />
-                <img src="../src/assets/18.jpg" alt="oops" />
-                <img src="../src/assets/19.jpg" alt="oops" />
-                <img src="../src/assets/20.jpg" alt="oops" />
+                <div className="img1"></div>
+                <div className="img2"></div>
+                <div className="img3"></div>
+                <div className="img4"></div>
+                <div className="img5"></div>
+                <div className="img6"></div>
+                <div className="img7"></div>
+                <div className="img8"></div>
+                <div className="img9"></div>
+                <div className="img10"></div>
+                <div className="img11"></div>
+                <div className="img12"></div>
+                <div className="img13"></div>
+                <div className="img14"></div>
+                <div className="img15"></div>
+                <div className="img16"></div>
+                <div className="img17"></div>
+                <div className="img18"></div>
+                <div className="img19"></div>
+                <div className="img20"></div>
             </div>
         </div>
         <div className="about-section">

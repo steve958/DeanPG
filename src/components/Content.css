@@ -279,16 +279,98 @@
     background-color: #454545;
 }
 
-.carousel-container img {
+.img1 {
+    background-image: url('../assets/1.jpg');
+}
+
+.img2 {
+    background-image: url('../assets/2.jpg');
+}
+
+.img3 {
+    background-image: url('../assets/3.jpg');
+}
+
+.img4 {
+    background-image: url('../assets/4.jpg');
+}
+
+.img5 {
+    background-image: url('../assets/5.jpg');
+}
+
+.img6 {
+    background-image: url('../assets/6.jpg');
+}
+
+.img7 {
+    background-image: url('../assets/7.jpg');
+}
+
+.img8 {
+    background-image: url('../assets/8.jpg');
+}
+
+.img9 {
+    background-image: url('../assets/9.jpg');
+}
+
+.img10 {
+    background-image: url('../assets/10.jpg');
+}
+
+.img11 {
+    background-image: url('../assets/11.jpg');
+}
+
+.img12 {
+    background-image: url('../assets/12.jpg');
+}
+
+.img13 {
+    background-image: url('../assets/13.jpg');
+}
+
+.img14 {
+    background-image: url('../assets/14.jpg');
+}
+
+.img15 {
+    background-image: url('../assets/15.jpg');
+}
+
+.img16 {
+    background-image: url('../assets/16.jpg');
+}
+
+.img17 {
+    background-image: url('../assets/17.jpg');
+}
+
+.img18 {
+    background-image: url('../assets/18.jpg');
+}
+
+.img19 {
+    background-image: url('../assets/19.jpg');
+}
+
+.img20 {
+    background-image: url('../assets/20.jpg');
+}
+
+.carousel-container div {
     transition: all 0.3s;
     width: 150px;
     height: 150px;
     border: 2px solid;
     margin: 10px;
     object-fit: contain;
+    background-size: cover;
+    background-position: center;
 }
 
-.carousel-container img:hover {
+.carousel-container div:hover {
     position: sticky;
     cursor: zoom-in;
     scale: 2;
@@ -384,7 +466,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .about-us {
