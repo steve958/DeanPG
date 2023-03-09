@@ -24,7 +24,8 @@ function App() {
       {realEstateActive &&
         <RealEstate
           setRealEstateActive={setRealEstateActive}
-          setRealEstateContact={setRealEstateContact} />}
+          setRealEstateContact={setRealEstateContact}
+          setSideBarActive={setSideBarActive} />}
       {sideBarActive && !realEstateActive &&
         <SideBar
           setRealEstateActive={setRealEstateActive}
