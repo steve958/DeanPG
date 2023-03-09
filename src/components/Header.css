@@ -10,7 +10,7 @@
 }
 
 .logo {
-    background-image: url('../assets/Novilogo.png');
+    background-image: url('../assets/logoM.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,9 +100,10 @@
     }
 
     .logo {
-        top: 25vh;
-        width: 100px;
-        height: 100px;
+        top: 26vh;
+        left: 37%;
+        width: 140px;
+        height: 140px;
     }
 
 

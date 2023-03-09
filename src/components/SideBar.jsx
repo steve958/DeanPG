@@ -33,9 +33,8 @@ function SideBar(props) {
                 <RiCloseCircleFill size={25} color='gold' />
             </span>
             <p>prodaja nekretnina</p>
-            <img src="https://www.montaznekuce.com/wp-content/uploads/2020/10/valjevo-123-1-450x270.jpg" alt="" />
-            <img src="https://www.montaznekucedomtera.rs/images/klasicne-montazne-kuce.jpg" alt="" />
-            <p>15.000$</p>
+            <div className='object1-sidebar'>360.000€</div>
+            <div className='object2-sidebar'>130.000€</div>
         </div>
     )
 }

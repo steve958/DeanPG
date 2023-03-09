@@ -2,8 +2,8 @@
     position: fixed;
     right: 0;
     top: 20vh;
-    width: 18vw;
-    height: 62vh;
+    width: 300px;
+    height: 60vh;
     background-color: whitesmoke;
     z-index: 20;
     border-radius: 5px;
@@ -20,8 +20,6 @@
     width: 300px;
     margin: 10px;
     animation: slideSideBarImg 2s 1;
-    /* opacity: 0.4;
-    filter: blur(4px); */
 }
 
 .covering-sidebar {
@@ -42,17 +40,32 @@
     cursor: pointer;
 }
 
-@keyframes slideSideBar {
-    0% {
-        width: 0
-    }
-
-    100% {
-        width: 18vw;
-    }
+.object1-sidebar {
+    width: 250px;
+    height: 250px;
+    background-image: url('../assets/kuca/IMG-20230305-WA0038.jpg');
+    background-position: center;
+    background-size: cover;
+    color: gold;
+    text-align: center;
+    margin: 10px;
+    animation: slideSideBarImg 0.5s 1;
 }
 
-@keyframes slideSideBarImg {
+.object2-sidebar {
+    width: 250px;
+    height: 250px;
+    background-image: url('../assets/stan/IMG-20230305-WA0031.jpg');
+    background-position: center;
+    background-size: cover;
+    color: gold;
+    text-align: center;
+    margin: 10px;
+    animation: slideSideBarImg 0.5s ease-in;
+}
+
+
+@keyframes slideSideBar {
     0% {
         width: 0
     }
@@ -62,10 +75,38 @@
     }
 }
 
+@keyframes slideSideBarSm {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+
+@keyframes slideSideBarImg {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
 .close-btn {
     position: absolute;
     top: 5px;
     right: 20px;
     cursor: pointer;
     z-index: 21;
+}
+
+@media only screen and (max-width: 450px) {
+    .side-bar-container {
+        width: 100vw;
+        animation: slideSideBarSm 1s 1;
+    }
 }

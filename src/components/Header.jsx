@@ -39,8 +39,10 @@ const Header = () => {
             </span>
         </div>
         <div className="social-icons-container">
+            <a href="https://www.instagram.com/deanausbau/" target="_blank">
+                <TiSocialInstagram size={30} color='gold' />
+            </a>
             <FaFacebookSquare size={30} color='gold' />
-            <TiSocialInstagram size={30} color='gold' />
         </div>
     </div>
 }

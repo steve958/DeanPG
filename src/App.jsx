@@ -10,7 +10,7 @@ import RealEstate from './components/RealEstate'
 function App() {
   const [sideBarActive, setSideBarActive] = useState(false)
   const [realEstateActive, setRealEstateActive] = useState(false)
-
+  const [realEstateContact, setRealEstateContact] = useState(false)
   useEffect(() => {
     if (!realEstateActive) {
       setTimeout(() => setSideBarActive(true), 10000)
@@ -22,13 +22,15 @@ function App() {
       <Header />
       <Menu setRealEstateActive={setRealEstateActive} />
       {realEstateActive &&
-        <RealEstate setRealEstateActive={setRealEstateActive} />}
+        <RealEstate
+          setRealEstateActive={setRealEstateActive}
+          setRealEstateContact={setRealEstateContact} />}
       {sideBarActive && !realEstateActive &&
         <SideBar
           setRealEstateActive={setRealEstateActive}
           setSideBarActive={setSideBarActive}
           realEstateActive={realEstateActive} />}
-      <Content />
+      <Content realEstateContact={realEstateContact} />
     </div>
   )
 }

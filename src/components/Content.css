@@ -32,10 +32,10 @@
 .background-img {
     width: 100%;
     height: 70vh;
-    background-image: url('../assets/dean-background.jpg');
+    background-image: url('../assets/dean-backgroundM.jpg');
     background-size: cover;
     background-position: bottom;
-    filter: brightness(0.8);
+    /* filter: brightness(0.8); */
 }
 
 .motivation-msg {
@@ -417,7 +417,6 @@
     display: flex;
     background-image: url('../assets/board1.jpg');
     background-size: cover;
-
 }
 
 .about-icons {
@@ -462,10 +461,11 @@
 .logo-img {
     width: 500px;
     height: 500px;
-    background-image: url('../assets/logo-project.png');
+    background-image: url('../assets/logoM.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(1.5);
 }
 
 .about-us {

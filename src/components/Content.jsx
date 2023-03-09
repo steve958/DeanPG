@@ -12,7 +12,10 @@ import { BiError } from 'react-icons/bi'
 import emailjs from '@emailjs/browser';
 
 
-const Content = () => {
+const Content = (props) => {
+
+    const { realEstateContact } = props
+
     const ref = useRef(null)
     const form = useRef(null)
     const [isVisible, setIsVisible] = useState(true)
@@ -24,6 +27,12 @@ const Content = () => {
             setTimeout(() => { setMessageSent(false) }, 3000)
         }
     }, [messageSent])
+
+    useEffect(() => {
+        if (realEstateContact) {
+            handleContactClick()
+        }
+    }, [realEstateContact])
 
     useEffect(() => {
         if (messageError) {
@@ -194,8 +203,10 @@ const Content = () => {
                 <button className="send-msg" type="submit">POŠALJITE PORUKU</button>
             </form>
             <span className="social-icons">
+                <a href="https://www.instagram.com/deanausbau/" target="_blank">
+                    <TiSocialInstagram size={30} color='gold' />
+                </a>
                 <FaFacebookSquare size={30} color='gold' />
-                <TiSocialInstagram size={30} color='gold' />
             </span>
         </div>
     </div >
