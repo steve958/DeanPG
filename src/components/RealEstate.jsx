@@ -16,6 +16,7 @@ export default function RealEstate(props) {
 
     useEffect(() => {
         setSideBarActive(false)
+        return setSideBarActive(false)
     }, [])
 
     return (

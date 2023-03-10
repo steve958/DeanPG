@@ -147,8 +147,9 @@
         position: absolute;
         top: 12vh;
         height: fit-content;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .menu-item {

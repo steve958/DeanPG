@@ -101,7 +101,6 @@
 
     .logo {
         top: 26vh;
-        left: 37%;
         width: 140px;
         height: 140px;
     }
@@ -109,5 +108,6 @@
 
     .social-icons-container {
         width: 20vw;
+        top: 28vh;
     }
 }

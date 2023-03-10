@@ -831,7 +831,7 @@
     }
 
     .social-icons {
-        bottom: 565px;
+        bottom: 570px;
     }
 
     .contact-form {
@@ -888,5 +888,14 @@
 
     .covering-div {
         font-size: 20px;
+    }
+
+    .carousel-container {
+        padding: 0;
+    }
+
+    .carousel-container div {
+        width: 75px;
+        height: 75px;
     }
 }
