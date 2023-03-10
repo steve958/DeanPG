@@ -832,10 +832,12 @@
 
     .social-icons {
         top: 10px;
+        height: fit-content;
     }
 
     .contact-form {
         flex-direction: column;
+        z-index: 200;
     }
 
     .info-box input {
