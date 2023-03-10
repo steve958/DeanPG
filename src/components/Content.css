@@ -833,11 +833,12 @@
     .social-icons {
         top: 10px;
         height: fit-content;
+        z-index: 14;
     }
 
     .contact-form {
         flex-direction: column;
-        z-index: 200;
+        z-index: 15;
     }
 
     .info-box input {
