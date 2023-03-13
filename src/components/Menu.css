@@ -72,6 +72,43 @@
     text-decoration: none !important;
 }
 
+.language-wrapper {
+    position: absolute;
+    top: -20px;
+    right: -20vw;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    color: whitesmoke;
+}
+
+.language-wrapper span {
+    display: flex;
+}
+
+.croatia {
+    width: 50px;
+    height: 25px;
+    background-image: url('../assets/croatia.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.active {
+    border: 2px solid gold;
+}
+
+.english {
+    width: 50px;
+    height: 25px;
+    background-image: url('../assets/english.png');
+    background-size: cover;
+    background-position: center;
+    margin: 4px;
+    cursor: pointer;
+}
 
 @keyframes hummering {
     0% {
@@ -114,9 +151,22 @@
 
 @media only screen and (max-width: 1270px) {
     .menu-container {
-        width: 100vw;
+        width: 85vw;
         left: 0;
         white-space: nowrap;
+    }
+
+    .language-wrapper {
+        width: fit-content;
+        color: #454545;
+        font-weight: 600;
+        right: -15vw;
+        top: 12px;
+
+    }
+
+    .language-wrapper p {
+        display: none;
     }
 }
 
@@ -136,30 +186,52 @@
         width: 50%;
         height: auto;
     }
+
+    .language-wrapper {
+        top: -10px;
+    }
+
+    .language-wrapper span {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .menu-container {
         flex-direction: column;
+        align-items: flex-end;
         height: 100px;
     }
 
     .realestate {
         position: absolute;
-        top: 13vh;
+        left: 18vw;
+        top: 15vh;
         height: fit-content;
-        width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
+        width: 50vw;
+        padding-left: 50px;
+        padding-right: 50px;
+        letter-spacing: 3px !important;
     }
 
     .menu-item {
-        border-bottom: 2px solid #454545;
         width: 50%;
+        border: none;
     }
 
     .hummer {
         width: 10%;
         height: auto;
+    }
+
+    .language-wrapper {
+        padding: 5px;
+        height: 100%;
+    }
+
+    .english,
+    .croatia {
+        width: 30px;
+        height: 15px;
     }
 }

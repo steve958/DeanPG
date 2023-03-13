@@ -5,7 +5,9 @@ import { FaRegClock, FaFacebookSquare } from 'react-icons/fa'
 import { TiSocialInstagram } from 'react-icons/ti'
 
 
-const Header = () => {
+const Header = (props) => {
+
+    const { language } = props
 
     return <div className="header-container">
         <div className="logo-container">
@@ -15,7 +17,7 @@ const Header = () => {
             <span className="info-field">
                 <span className="info-icon"><BsTelephone size={45} /></span>
                 <span className="info-text">
-                    <p>+395 3466323</p>
+                    <p>+395 953466323</p>
                     <p className="gray-text">info@dean-ausbau.de</p>
                 </span>
             </span>
@@ -24,8 +26,8 @@ const Header = () => {
                     <BsHouseDoor size={45} />
                 </span>
                 <span className="info-text">
-                    <p>Ul. Donja Pastuša 23</p>
-                    <p className="gray-text">Donja Pastuša, HR</p>
+                    <p>{language ? 'Ul.Donja Pastuša 23' : 'St.Donja Pastuša 23'}</p>
+                    <p className="gray-text">Petrinja, HR</p>
                 </span>
             </span>
             <span className="info-field">
@@ -33,16 +35,18 @@ const Header = () => {
                     <FaRegClock size={45} />
                 </span>
                 <span className="info-text">
-                    <p>PON-SUB</p>
+                    <p>{language ? 'PON-SUB' : 'MON-SAT'}</p>
                     <p className="gray-text">08:00-16:00</p>
                 </span>
             </span>
         </div>
         <div className="social-icons-container">
             <a href="https://www.instagram.com/deanausbau/" target="_blank">
-                <TiSocialInstagram size={30} color='gold' />
+                <TiSocialInstagram size={40} color='gold' />
             </a>
-            <FaFacebookSquare size={30} color='gold' />
+            <a href="https://www.instagram.com/deanausbau/" target="_blank">
+                <FaFacebookSquare size={35} color='gold' />
+            </a>
         </div>
     </div>
 }

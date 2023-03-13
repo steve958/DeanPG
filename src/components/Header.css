@@ -46,6 +46,7 @@
     font-size: 1em;
     font-weight: 600;
     color: whitesmoke;
+    text-align: center;
 }
 
 .gray-text {
@@ -61,8 +62,8 @@
 
 .social-icons-container {
     position: absolute;
-    right: 180px;
-    width: 10vw;
+    right: 130px;
+    width: 16vw;
     height: 50%;
     display: flex;
     justify-content: space-around;
@@ -99,15 +100,22 @@
         justify-content: center;
     }
 
+    .header-container {
+        z-index: 11;
+        height: 12vh;
+    }
+
     .logo {
-        top: 26vh;
+        top: 9vh;
         width: 140px;
         height: 140px;
+        left: 10vw;
     }
 
 
     .social-icons-container {
-        width: 20vw;
-        top: 28vh;
+        width: 40vw;
+        top: 32vh;
+        left: 30vw;
     }
 }

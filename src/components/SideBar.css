@@ -46,10 +46,11 @@
     background-image: url('../assets/kuca/IMG-20230305-WA0038.jpg');
     background-position: center;
     background-size: cover;
-    color: gold;
+    color: whitesmoke;
     text-align: center;
     margin: 10px;
     animation: slideSideBarImg 0.5s 1;
+    font-size: 35px;
 }
 
 .object2-sidebar {
@@ -58,10 +59,31 @@
     background-image: url('../assets/stan/IMG-20230305-WA0031.jpg');
     background-position: center;
     background-size: cover;
-    color: gold;
+    color: whitesmoke;
     text-align: center;
     margin: 10px;
+    font-size: 35px;
     animation: slideSideBarImg 0.5s ease-in;
+}
+
+.commpany-name-1 {
+    position: absolute;
+    right: -15px;
+    top: 90px;
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
+
+.commpany-name-2 {
+    position: absolute;
+    left: -15px;
+    top: 90px;
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
 }
 
 
@@ -109,4 +131,30 @@
         width: 100vw;
         animation: slideSideBarSm 1s 1;
     }
+
+    .object1-sidebar {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .object2-sidebar {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+
+    .commpany-name-1 {
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .commpany-name-2 {
+        left: 10px;
+        font-size: 12px;
+    }
+
 }

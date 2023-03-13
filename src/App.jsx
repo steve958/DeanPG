@@ -11,6 +11,8 @@ function App() {
   const [sideBarActive, setSideBarActive] = useState(false)
   const [realEstateActive, setRealEstateActive] = useState(false)
   const [realEstateContact, setRealEstateContact] = useState(false)
+  const [language, setLanguage] = useState('croatian')
+
   useEffect(() => {
     if (!realEstateActive) {
       setTimeout(() => setSideBarActive(true), 10000)
@@ -19,19 +21,24 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Menu setRealEstateActive={setRealEstateActive} />
+      <Header language={language} />
+      <Menu
+        setRealEstateActive={setRealEstateActive}
+        language={language}
+        setLanguage={setLanguage} />
       {realEstateActive &&
         <RealEstate
           setRealEstateActive={setRealEstateActive}
           setRealEstateContact={setRealEstateContact}
-          setSideBarActive={setSideBarActive} />}
+          setSideBarActive={setSideBarActive}
+          language={language} />}
       {sideBarActive && !realEstateActive &&
         <SideBar
           setRealEstateActive={setRealEstateActive}
           setSideBarActive={setSideBarActive}
-          realEstateActive={realEstateActive} />}
-      <Content realEstateContact={realEstateContact} />
+          realEstateActive={realEstateActive}
+          language={language} />}
+      <Content realEstateContact={realEstateContact} language={language} />
     </div>
   )
 }

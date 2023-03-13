@@ -8,7 +8,7 @@ import Object2 from './Object2'
 
 export default function RealEstate(props) {
 
-    const { setRealEstateActive, setRealEstateContact, setSideBarActive } = props
+    const { setRealEstateActive, setRealEstateContact, setSideBarActive, language } = props
 
     const [objectOneClicked, setObjectOneClicked] = useState(false)
     const [objectTwoClicked, setObjectTwoClicked] = useState(false)
@@ -22,8 +22,7 @@ export default function RealEstate(props) {
     return (
         <div className='realestate-modal'>
             <span className='modal-heading'>
-                <p className='heading1'>Prodaja nekretnina</p>
-                <p className='heading2'>Real Estate / Immobilien</p>
+                <p className='heading1'>{language ? 'Prodaja nekretnina' : 'Real estate for sale'}</p>
             </span>
             {!objectOneClicked && !objectTwoClicked && <span className='modal-content'>
                 <div className='estate-wrapper'>
