@@ -3,7 +3,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io'
 import mainImg from '../assets/kuca/IMG-20230305-WA0038.jpg'
 import sideImg1 from '../assets/kuca/IMG-20230305-WA0039.jpg'
 import sideImg2 from '../assets/kuca/IMG-20230305-WA0040.jpg'
-import sideImg3 from '../assets/kuca/house.jpg'
+import sideImg3 from '../assets/kuca/projekat1.jpg'
 
 export default function Object1(props) {
 
