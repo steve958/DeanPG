@@ -80,6 +80,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 
 .price {
@@ -326,8 +327,8 @@
         scale: none;
     }
 
-    .close-modal {
-        top: 10px;
+    .back-arrow {
+        top: 50px;
     }
 
     .object2-left {
@@ -358,6 +359,23 @@
         height: 30vh;
         margin: 0;
     }
+
+    .heading1 {
+        padding: 30px;
+    }
+
+    .close-modal {
+        top: 50px;
+    }
+
+    .object2-left {
+        height: fit-content
+    }
+
+    .object1-right p {
+        margin: 0;
+    }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -365,4 +383,6 @@
         width: 50vw;
         height: 20vh;
     }
+
+
 }

@@ -7,7 +7,7 @@ import sideImg3 from '../assets/kuca/house.jpg'
 
 export default function Object1(props) {
 
-    const { setObjectOneClicked, setRealEstateContact, setRealEstateActive } = props
+    const { setObjectOneClicked, setRealEstateContact, setRealEstateActive, language } = props
 
     const [mainImgUrl, setMainImgUrl] = useState(`url(${mainImg})`)
     const [sideImg1Url, setSideImg1Url] = useState(`url(${sideImg1})`)
@@ -75,14 +75,16 @@ export default function Object1(props) {
                         }}></div>
                 </div>
                 <div className='object1-right'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis dolores quidem modi accusamus, iure atque impedit tempore officiis nulla eveniet harum beatae reprehenderit nisi? Delectus eaque impedit quisquam culpa.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus, ut dolore sunt adipisci aspernatur suscipit tempora molestias magni voluptates? Omnis vero repudiandae temporibus, laudantium minima enim at ex fugit!</p>
+                    <p>{language ? 'Trosobna kuća plus garaža u sklopu kuće, ili kasnije još jedan apartman od 36m². Pogled na more i prirodu. Površina 128m².' : 'Three-room house plus a garage within the house, or later another apartment of 36m². View of the sea and nature. Square footage 128m².'}</p>
+                    <p>{language ? 'Rok useljenja - Ljeto 2023' : 'Deadline for moving in - Summer 2023'}</p>
+                    <p>{language ? '-Bazen' : '-Pool'}</p>
+                    <p>{language ? '-Parking mesto / garaža' : '-Parking space / garage'}</p>
                 </div>
             </div>
             <div className='object1-bottom'>
                 <p>360.000€</p>
                 <button className='object1-contact' onClick={handleContactUs}
-                >kontaktirajte nas</button>
+                >{language ? 'kontaktirajte nas' : 'contact us'}</button>
             </div>
         </div>
     )

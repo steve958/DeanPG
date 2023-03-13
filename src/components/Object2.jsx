@@ -6,7 +6,7 @@ import sideImg2 from '../assets/stan/IMG-20230305-WA0035.jpg'
 import sideImg3 from '../assets/stan/IMG-20230305-WA0030.jpg'
 import sideImg4 from '../assets/stan/IMG-20230305-WA0023.jpg'
 import sideImg5 from '../assets/stan/IMG-20230305-WA0024.jpg'
-import sideImg6 from '../assets/stan/IMG-20230305-WA0025.jpg'
+import sideImg6 from '../assets/stan/IMG-20230305-WA0022.jpg'
 import sideImg7 from '../assets/stan/IMG-20230305-WA0028.jpg'
 import sideImg8 from '../assets/stan/IMG-20230305-WA0029.jpg'
 import sideImg9 from '../assets/stan/IMG-20230305-WA0032.jpg'
@@ -16,7 +16,7 @@ import sideImg12 from '../assets/stan/IMG-20230305-WA0037.jpg'
 
 export default function Object2(props) {
 
-    const { setRealEstateContact, setRealEstateActive, setObjectTwoClicked } = props
+    const { setRealEstateContact, setRealEstateActive, setObjectTwoClicked, language } = props
 
     const [mainImgUrl, setMainImgUrl] = useState(`url(${mainImg})`)
     const [sideImg1Url, setSideImg1Url] = useState(`url(${sideImg1})`)
@@ -176,14 +176,14 @@ export default function Object2(props) {
                         }}></div>
                 </div>
                 <div className='object1-right'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis dolores quidem modi accusamus, iure atque impedit tempore officiis nulla eveniet harum beatae reprehenderit nisi? Delectus eaque impedit quisquam culpa.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus, ut dolore sunt adipisci aspernatur suscipit tempora molestias magni voluptates? Omnis vero repudiandae temporibus, laudantium minima enim at ex fugit!</p>
+                    <p>{language ? 'Dvosoban stan na Rivi. Renoviran pre 2 godine. Bez velikih ulaganja. U samom centru i na samoj Rivi. Površina 37m².' : 'Two-room apartment on the Riva. Renovated 2 years ago. Without big investments. In the very center and on the Riva itself. Square footage 37m².'}</p>
+                    <p>{language ? 'Prvi kat, iznad stana ima još jedan kat. Useljenje moguće odmah.' : 'First floor, there is another floor above the apartment. Move-in possible immediately.'}</p>
                 </div>
             </div>
             <div className='object1-bottom'>
                 <p>130.000€</p>
                 <button className='object1-contact' onClick={handleContactUs}
-                >kontaktirajte nas</button>
+                >{language ? 'kontaktirajte nas' : 'contact us'}</button>
             </div>
         </div>
     )

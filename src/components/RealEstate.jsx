@@ -35,7 +35,7 @@ export default function RealEstate(props) {
                             <BsHouseDoor color='gold' size={45} />
                         </span>
                         <div className='object1'></div>
-                        <p>novogradnja - pripizdina</p>
+                        <p>{language ? 'Novogradnja - Vis-Rukavac, Srebrna plaža' : 'New House - Vis-Rukavac, Srebrna plaža'}</p>
                         <p className='price'>360.000€</p>
                     </span>
                     <span className='estate-section'
@@ -47,21 +47,24 @@ export default function RealEstate(props) {
                             <HiOutlineBuildingOffice2 color='gold' size='45' />
                         </span>
                         <div className='object2'></div>
-                        <p>58m2 - pripizdina</p>
-                        <p className='price'>130.000€</p>
+                        <p>{language ? '37m² - Otok Vis' : '37m² - Island of Vis'}</p>
+                        <p className='price'>140.000€</p>
                     </span>
                 </div>
             </span>}
             {objectOneClicked && <Object1
                 setObjectOneClicked={setObjectOneClicked}
                 setRealEstateActive={setRealEstateActive}
-                setRealEstateContact={setRealEstateContact} />}
+                setRealEstateContact={setRealEstateContact}
+                language={language} />}
             {objectTwoClicked && <Object2
                 setObjectTwoClicked={setObjectTwoClicked}
                 setRealEstateActive={setRealEstateActive}
                 setRealEstateContact={setRealEstateContact}
+                language={language}
             />}
-            <span className='close-modal' onClick={() => setRealEstateActive(false)}>
+            <span className='close-modal'
+                onClick={() => setRealEstateActive(false)}>
                 <RiCloseCircleFill size={45} color='gold' />
             </span>
         </div>
