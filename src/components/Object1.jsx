@@ -4,6 +4,10 @@ import mainImg from '../assets/kuca/IMG-20230305-WA0038.jpg'
 import sideImg1 from '../assets/kuca/IMG-20230305-WA0039.jpg'
 import sideImg2 from '../assets/kuca/IMG-20230305-WA0040.jpg'
 import sideImg3 from '../assets/kuca/projekat1.jpg'
+import sideImg4 from '../assets/kuca/projekat2.jpg'
+import sideImg5 from '../assets/kuca/projekat3.jpg'
+import sideImg6 from '../assets/kuca/projekat4.jpg'
+
 
 export default function Object1(props) {
 
@@ -13,6 +17,10 @@ export default function Object1(props) {
     const [sideImg1Url, setSideImg1Url] = useState(`url(${sideImg1})`)
     const [sideImg2Url, setSideImg2Url] = useState(`url(${sideImg2})`)
     const [sideImg3Url, setSideImg3Url] = useState(`url(${sideImg3})`)
+    const [sideImg4Url, setSideImg4Url] = useState(`url(${sideImg4})`)
+    const [sideImg5Url, setSideImg5Url] = useState(`url(${sideImg5})`)
+    const [sideImg6Url, setSideImg6Url] = useState(`url(${sideImg6})`)
+    const [project, setProject] = useState(false)
 
     function handleContactUs() {
         setRealEstateContact(true)
@@ -30,14 +38,32 @@ export default function Object1(props) {
             case 'side1':
                 setSideImg1Url(mainImgUrl)
                 setMainImgUrl(sideImg1Url)
+                setProject(false)
                 break;
             case 'side2':
                 setSideImg2Url(mainImgUrl)
                 setMainImgUrl(sideImg2Url)
+                setProject(false)
                 break;
             case 'side3':
                 setSideImg3Url(mainImgUrl)
                 setMainImgUrl(sideImg3Url)
+                setProject(false)
+                break;
+            case 'side4':
+                setSideImg4Url(mainImgUrl)
+                setMainImgUrl(sideImg4Url)
+                setProject(true)
+                break;
+            case 'side5':
+                setSideImg5Url(mainImgUrl)
+                setMainImgUrl(sideImg5Url)
+                setProject(true)
+                break;
+            case 'side6':
+                setSideImg6Url(mainImgUrl)
+                setMainImgUrl(sideImg6Url)
+                setProject(true)
                 break;
             default:
                 return
@@ -53,23 +79,42 @@ export default function Object1(props) {
                 </span>
                 <div className='object1-left'>
                     <div className='object1-slider'>
-                        <div className='side-image'
-                            style={{
-                                backgroundImage: sideImg1Url
-                            }}
-                            onClick={() => handleMainImgChange('side1')}></div>
-                        <div className='side-image'
-                            style={{
-                                backgroundImage: sideImg2Url
-                            }}
-                            onClick={() => handleMainImgChange('side2')}></div>
-                        <div className='side-image'
-                            style={{
-                                backgroundImage: sideImg3Url
-                            }}
-                            onClick={() => handleMainImgChange('side3')}></div>
+                        <span>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg1Url
+                                }}
+                                onClick={() => handleMainImgChange('side1')}></div>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg2Url
+                                }}
+                                onClick={() => handleMainImgChange('side2')}></div>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg3Url
+                                }}
+                                onClick={() => handleMainImgChange('side3')}></div>
+                        </span>
+                        <span>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg4Url
+                                }}
+                                onClick={() => handleMainImgChange('side4')}></div>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg5Url
+                                }}
+                                onClick={() => handleMainImgChange('side5')}></div>
+                            <div className='side-image'
+                                style={{
+                                    backgroundImage: sideImg6Url
+                                }}
+                                onClick={() => handleMainImgChange('side6')}></div>
+                        </span>
                     </div>
-                    <div className='object1-main-img'
+                    <div className={project ? 'object1-main-img project-size' : 'object1-main-img'}
                         style={{
                             backgroundImage: mainImgUrl
                         }}></div>

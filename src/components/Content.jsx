@@ -154,7 +154,7 @@ const Content = (props) => {
             <span className="contact-text"><p>{language ? 'KONTAKT' : 'CONTACT'}</p></span>
             <span className="contact-icons">
                 <span><BsTelephone size={30} color='gold' />
-                    +395 953466323</span>
+                    +385 95 3466 323</span>
                 <span><MdOutlineAlternateEmail size={30} color='gold' />
                     info@dean-ausbau.de</span>
             </span>

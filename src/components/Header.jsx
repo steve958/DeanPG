@@ -17,7 +17,7 @@ const Header = (props) => {
             <span className="info-field">
                 <span className="info-icon"><BsTelephone size={45} /></span>
                 <span className="info-text">
-                    <p>+395 953466323</p>
+                    <p>+385 95 3466 323</p>
                     <p className="gray-text">info@dean-ausbau.de</p>
                 </span>
             </span>

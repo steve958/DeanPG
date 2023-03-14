@@ -176,7 +176,7 @@ export default function Object2(props) {
                         }}></div>
                 </div>
                 <div className='object1-right'>
-                    <p>{language ? 'Dvosoban stan na Rivi. Renoviran pre 2 godine. Bez velikih ulaganja. U samom centru i na samoj Rivi. Površina 37m².' : 'Two-room apartment on the Riva. Renovated 2 years ago. Without big investments. In the very center and on the Riva itself. Square footage 37m².'}</p>
+                    <p>{language ? 'Dvosoban stan na Rivi. Renoviran prije 2 godine. Bez velikih ulaganja. U samom centru i na samoj Rivi. Površina 37m².' : 'Two-room apartment on the Riva. Renovated 2 years ago. Without big investments. In the very center of the town. Square footage 37m².'}</p>
                     <p>{language ? 'Prvi kat, iznad stana ima još jedan kat. Useljenje moguće odmah.' : 'First floor, there is another floor above the apartment. Move-in possible immediately.'}</p>
                 </div>
             </div>
