@@ -68,7 +68,6 @@ export default function Object1(props) {
             default:
                 return
         }
-
     }
 
     return (

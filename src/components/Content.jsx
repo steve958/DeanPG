@@ -179,7 +179,9 @@ const Content = (props) => {
                 <a href="https://www.instagram.com/deanausbau/" target="_blank">
                     <TiSocialInstagram size={30} color='gold' />
                 </a>
-                <FaFacebookSquare size={30} color='gold' />
+                <a href="https://www.facebook.com/dean.projekt.gradnja.d.o.o" target="_blank">
+                    <FaFacebookSquare size={30} color='gold' />
+                </a>
             </span>
         </div>
     </div >

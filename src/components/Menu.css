@@ -98,7 +98,7 @@
 }
 
 .active {
-    border: 2px solid gold;
+    border: 2px solid gold !important;
 }
 
 .english {
@@ -232,6 +232,7 @@
 
     .english,
     .croatia {
+        border: 2px solid transparent;
         width: 30px;
         height: 15px;
     }
