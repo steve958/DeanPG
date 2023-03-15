@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: public
+  DEPLOYMENT_FOLDER: dist
 
 jobs:
 # Please do not rename this job
@@ -46,7 +46,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: 444b9140-79c7-4790-8ec7-4a0711f86208
+          project-id: de6d1920-4be6-43ac-a285-a21953a82e1c
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
