@@ -156,7 +156,7 @@ const Content = (props) => {
                 <span><BsTelephone size={30} color='gold' />
                     +385 95 3466 323</span>
                 <span><MdOutlineAlternateEmail size={30} color='gold' />
-                    info@dean-ausbau.de</span>
+                    info@deanprojektgradnja.com</span>
             </span>
             <form className="contact-form-container" onSubmit={sendEmail} ref={form}>
                 {messageSent && <div className="message-sent">
@@ -176,10 +176,10 @@ const Content = (props) => {
                 <button className="send-msg" type="submit">{language ? 'POŠALJITE PORUKU' : 'SEND MESSAGE'}</button>
             </form>
             <span className="social-icons">
-                <a href="https://www.instagram.com/deanausbau/" target="_blank">
+                <a href="https://www.instagram.com/deanprojektgradnja/?igshid=YmMyMTA2M2Y%3D" target="_blank">
                     <TiSocialInstagram size={30} color='gold' />
                 </a>
-                <a href="https://www.facebook.com/dean.projekt.gradnja.d.o.o" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=100090850612956" target="_blank">
                     <FaFacebookSquare size={30} color='gold' />
                 </a>
             </span>

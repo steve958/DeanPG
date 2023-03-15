@@ -18,7 +18,7 @@ const Header = (props) => {
                 <span className="info-icon"><BsTelephone size={45} /></span>
                 <span className="info-text">
                     <p>+385 95 3466323</p>
-                    <p className="gray-text">info@dean-ausbau.de</p>
+                    <p className="gray-text mail">info@deanprojektgradnja.com</p>
                 </span>
             </span>
             <span className="info-field middle">
@@ -41,10 +41,10 @@ const Header = (props) => {
             </span>
         </div>
         <div className="social-icons-container">
-            <a href="https://www.instagram.com/deanausbau/" target="_blank">
+            <a href="https://www.instagram.com/deanprojektgradnja/?igshid=YmMyMTA2M2Y%3D" target="_blank">
                 <TiSocialInstagram size={40} color='gold' />
             </a>
-            <a href="https://www.facebook.com/dean.projekt.gradnja.d.o.o" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=100090850612956" target="_blank">
                 <FaFacebookSquare size={35} color='gold' />
             </a>
         </div>

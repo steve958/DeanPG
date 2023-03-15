@@ -862,7 +862,7 @@
     .send-msg {
         font-size: 15px;
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 
     .send-msg:active {

@@ -71,6 +71,17 @@
 
 }
 
+.mail {
+    width: 20vw;
+}
+
+@media only screen and (max-width: 1650px) {
+    .mail {
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width: 1400px) {
 
     .informations-container {
@@ -98,6 +109,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 5px;
     }
 
     .header-container {
