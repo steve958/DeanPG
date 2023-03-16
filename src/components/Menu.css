@@ -220,9 +220,14 @@
         border: none;
     }
 
+    .menu-item:first-child {
+        text-decoration: none;
+    }
+
     .hummer {
         width: 10%;
         height: auto;
+        text-decoration: none !important;
     }
 
     .language-wrapper {
