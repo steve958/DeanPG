@@ -19,7 +19,6 @@ export default function Object3(props) {
     const [sideImg4Url, setSideImg4Url] = useState(`url(${sideImg4})`)
     const [sideImg5Url, setSideImg5Url] = useState(`url(${sideImg5})`)
     const [sideImg6Url, setSideImg6Url] = useState(`url(${sideImg6})`)
-    const [project, setProject] = useState(false)
 
     function handleContactUs() {
         setRealEstateContact(true)
@@ -37,32 +36,26 @@ export default function Object3(props) {
             case 'side1':
                 setSideImg1Url(mainImgUrl)
                 setMainImgUrl(sideImg1Url)
-                setProject(false)
                 break;
             case 'side2':
                 setSideImg2Url(mainImgUrl)
                 setMainImgUrl(sideImg2Url)
-                setProject(false)
                 break;
             case 'side3':
                 setSideImg3Url(mainImgUrl)
                 setMainImgUrl(sideImg3Url)
-                setProject(false)
                 break;
             case 'side4':
                 setSideImg4Url(mainImgUrl)
                 setMainImgUrl(sideImg4Url)
-                setProject(true)
                 break;
             case 'side5':
                 setSideImg5Url(mainImgUrl)
                 setMainImgUrl(sideImg5Url)
-                setProject(true)
                 break;
             case 'side6':
                 setSideImg6Url(mainImgUrl)
                 setMainImgUrl(sideImg6Url)
-                setProject(true)
                 break;
             default:
                 return
@@ -112,7 +105,7 @@ export default function Object3(props) {
                                 onClick={() => handleMainImgChange('side6')}></div>
                         </span>
                     </div>
-                    <div className={project ? 'object1-main-img project-size' : 'object1-main-img'}
+                    <div className='object1-main-img'
                         style={{
                             backgroundImage: mainImgUrl
                         }}></div>
