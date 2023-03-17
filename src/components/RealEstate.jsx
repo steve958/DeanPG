@@ -5,6 +5,7 @@ import { BsHouseDoor } from 'react-icons/bs'
 import { HiOutlineBuildingOffice2 } from 'react-icons/hi2'
 import Object1 from './Object1'
 import Object2 from './Object2'
+import Object3 from './Object3'
 
 export default function RealEstate(props) {
 
@@ -12,7 +13,7 @@ export default function RealEstate(props) {
 
     const [objectOneClicked, setObjectOneClicked] = useState(false)
     const [objectTwoClicked, setObjectTwoClicked] = useState(false)
-
+    const [objectThreeClicked, setObjectThreeClicked] = useState(false)
 
     useEffect(() => {
         setSideBarActive(false)
@@ -24,12 +25,13 @@ export default function RealEstate(props) {
             <span className='modal-heading'>
                 <p className='heading1'>{language ? 'Prodaja nekretnina' : 'Real estate for sale'}</p>
             </span>
-            {!objectOneClicked && !objectTwoClicked && <span className='modal-content'>
+            {!objectOneClicked && !objectTwoClicked && !objectThreeClicked && <span className='modal-content'>
                 <div className='estate-wrapper'>
                     <span className='estate-section'
                         onClick={() => {
                             setObjectOneClicked(true)
                             setObjectTwoClicked(false)
+                            setObjectThreeClicked(false)
                         }}>
                         <span className='house-icon'>
                             <BsHouseDoor color='gold' size={45} />
@@ -42,6 +44,7 @@ export default function RealEstate(props) {
                         onClick={() => {
                             setObjectOneClicked(false)
                             setObjectTwoClicked(true)
+                            setObjectThreeClicked(false)
                         }}>
                         <span className='building-icon'>
                             <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -49,6 +52,19 @@ export default function RealEstate(props) {
                         <div className='object2'></div>
                         <p>{language ? '37m² - Otok Vis' : '37m² - Island of Vis'}</p>
                         <p className='price'>140.000€</p>
+                    </span>
+                    <span className='estate-section'
+                        onClick={() => {
+                            setObjectOneClicked(false)
+                            setObjectTwoClicked(false)
+                            setObjectThreeClicked(true)
+                        }}>
+                        <span className='house-icon'>
+                            <BsHouseDoor color='gold' size={45} />
+                        </span>
+                        <div className='object3'></div>
+                        <p>{language ? 'Kuća Kut-Valica Neuseljavana' : 'Kut-Rukavac No previous owners'}</p>
+                        <p className='price'>420.000€</p>
                     </span>
                 </div>
             </span>}
@@ -59,6 +75,12 @@ export default function RealEstate(props) {
                 language={language} />}
             {objectTwoClicked && <Object2
                 setObjectTwoClicked={setObjectTwoClicked}
+                setRealEstateActive={setRealEstateActive}
+                setRealEstateContact={setRealEstateContact}
+                language={language}
+            />}
+            {objectThreeClicked && <Object3
+                setObjectThreeClicked={setObjectThreeClicked}
                 setRealEstateActive={setRealEstateActive}
                 setRealEstateContact={setRealEstateContact}
                 language={language}
