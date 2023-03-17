@@ -22,7 +22,7 @@ export default function Object3(props) {
 
     function handleContactUs() {
         setRealEstateContact(true)
-        setObjectOneClicked(false)
+        setObjectThreeClicked(false)
         setRealEstateActive(false)
     }
 
