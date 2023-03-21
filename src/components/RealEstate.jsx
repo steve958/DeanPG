@@ -94,7 +94,7 @@ export default function RealEstate(props) {
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
                             </span>
                             <div className='object4'></div>
-                            <p>{language ? 'Stan na Hvaru 37m²' : 'Apartment on Hvar 37m²'}</p>
+                            <p>{language ? 'Stan-Hvar 37m² +7,5m² teraca' : 'Apartment-Hvar 37m² + 7,5m² terrace'}</p>
                             <p className='price'>113.000€</p>
                         </span>
                         <span className='estate-section'
@@ -109,7 +109,7 @@ export default function RealEstate(props) {
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
                             </span>
                             <div className='object5'></div>
-                            <p>{language ? 'Stan na Hvaru 24m²' : 'Apartment on Hvar 37m²'}</p>
+                            <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment on Hvar 37m² + 7,5m² terrace'}</p>
                             <p className='price'>93.000€</p>
                         </span>
                     </div>
