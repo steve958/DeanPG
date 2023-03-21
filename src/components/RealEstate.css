@@ -72,8 +72,8 @@
 }
 
 .estate-section {
-    width: 450px;
-    height: 450px;
+    width: 320px;
+    height: 320px;
     border: 2px solid gold;
     display: flex;
     flex-direction: column;
@@ -90,6 +90,7 @@
 
 .estate-section p {
     margin: 0;
+    color: whitesmoke;
 }
 
 .estate-section:hover {
@@ -119,6 +120,24 @@
 
 .object3 {
     background-image: url('../assets/kuca-kut/slika2.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object4 {
+    background-image: url('../assets/stan-hvar/slika1.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object5 {
+    background-image: url('../assets/stan-hvar/slika4.jpg');
     width: 90%;
     height: 70%;
     background-size: cover;
