@@ -110,7 +110,7 @@ export default function Object5(props) {
                     }}></div>
             </div>
             <div className='object1-right'>
-                <p>{language ? 'Jednosoban stan na Hvaru, ul Marina Blagajića 11. Površina 24m² + 7,5m² terasa. Renoviran.' : 'One-room apartment on Hvar in the street Marina Blagajića 11. Square footage 24m² + 7,5m² terrace. Renovated.'}</p>
+                <p>{language ? 'Jednosoban stan na Hvaru, ul Marina Blagajića 11. Površina 24m² + 7,5m² teraca. Renoviran.' : 'One-room apartment on Hvar in the street Marina Blagajića 11. Square footage 24m² + 7,5m² terrace. Renovated.'}</p>
                 <p>{language ? 'Oko stana veliki vrt.' : 'The apartment is surrounded by a large garden'}</p>
             </div>
         </div>
