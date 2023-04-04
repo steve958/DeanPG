@@ -35,7 +35,7 @@ function SideBar(props) {
             <p>{language ? 'prodaja nekretnina' : 'real estate for sale'}</p>
             <p className='commpany-name-1'>dean projekt gradnja</p>
             <p className='commpany-name-2'>dean projekt gradnja</p>
-            <div className='object1-sidebar'>360.000€</div>
+            <div className='object1-sidebar'>380.000€</div>
             <div className='object2-sidebar'>140.000€</div>
         </div>
     )

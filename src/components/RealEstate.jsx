@@ -50,7 +50,7 @@ export default function RealEstate(props) {
                             </span>
                             <div className='object1'></div>
                             <p>{language ? 'Novogradnja - Vis-Rukavac, Srebrna plaža' : 'New House - Vis-Rukavac, Srebrna plaža'}</p>
-                            <p className='price'>360.000€</p>
+                            <p className='price'>380.000€</p>
                         </span>
                         <span className='estate-section'
                             onClick={() => {
