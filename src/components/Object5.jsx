@@ -115,7 +115,7 @@ export default function Object5(props) {
             </div>
         </div>
         <div className='object1-bottom'>
-            <p>93.000€</p>
+            <p>77.000€</p>
             <button className='object1-contact' onClick={handleContactUs}
             >{language ? 'kontaktirajte nas' : 'contact us'}</button>
         </div>

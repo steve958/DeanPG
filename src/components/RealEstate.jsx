@@ -110,7 +110,7 @@ export default function RealEstate(props) {
                             </span>
                             <div className='object5'></div>
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
-                            <p className='price'>93.000€</p>
+                            <p className='price'>77.000€</p>
                         </span>
                     </div>
                 </span>}
