@@ -11,7 +11,6 @@ import { GiConfirmed } from 'react-icons/gi'
 import { BiError } from 'react-icons/bi'
 import emailjs from '@emailjs/browser';
 import Gallery from "./Gallery";
-import { loginCall } from '../fetch'
 
 const Content = (props) => {
 
@@ -82,11 +81,6 @@ const Content = (props) => {
         e.target.reset()
     }
 
-    async function handleTestApi() {
-        const response = await loginCall()
-        console.log(response);
-    }
-
 
     return <div className="content-container">
         {!isVisible && <div className="home-icon">
@@ -136,7 +130,7 @@ const Content = (props) => {
         <div className="about-section">
             <div className="about-description">
                 <div className="about-logo">
-                    <div className="logo-img" onClick={handleTestApi}></div>
+                    <div className="logo-img"></div>
                 </div>
                 <div className="about-text">
                     <span className="about-us">{language ? 'O' : 'ABOUT'} <p className="yellow-text">{language ? 'NAMA' : 'US'}</p></span>
