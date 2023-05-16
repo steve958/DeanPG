@@ -119,10 +119,11 @@ export default function Object1(props) {
                         }}></div>
                 </div>
                 <div className='object1-right'>
-                    <p>{language ? 'Trosobna kuća plus garaža u sklopu kuće, ili kasnije još jedan apartman od 36m². Pogled na more i prirodu. Površina 128m².' : 'Three-room house plus a garage within the house, or later another apartment of 36m². View of the sea and nature. Square footage 128m².'}</p>
-                    <p>{language ? 'Rok useljenja - Ljeto 2023' : 'Deadline for moving in - Summer 2023'}</p>
-                    <p>{language ? '-Bazen' : '-Pool'}</p>
-                    <p>{language ? '-Parking mesto / garaža' : '-Parking space / garage'}</p>
+                    <p>{language ? 'Novogradnja 3-sobna kuca sa rokom useljenja Ljeto 2023,sa mogućim jos jednim apartmanom od 36m² u prizemlju' : 'Newly built 3-room house with move-in deadline Summer 2023, with possible one more apartment of 36m² on the ground floor'}</p>
+                    <p>{language ? 'Bazen / Đakuzi' : 'Pool / Jacuzzi'}</p>
+                    <p>{language ? 'Pogled na more i prirodu' : 'View of the sea and nature'}</p>
+                    <p>{language ? 'Miran kraj prepun zelenila' : 'A quiet neighborhood full of greenery'}</p>
+                    <p>{language ? 'Cijena je fleksibilna' : 'The price is flexible'}</p>
                 </div>
             </div>
             <div className='object1-bottom'>
