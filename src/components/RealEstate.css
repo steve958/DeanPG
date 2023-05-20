@@ -236,6 +236,14 @@
     justify-content: center;
 }
 
+.text-slider {
+    white-space: nowrap;
+    animation: slider 25s linear infinite;
+    background-color: gold;
+    overflow: hidden;
+    padding: 5px;
+}
+
 .object1-main-img,
 .object2-main-img {
     min-width: 400px;
@@ -298,6 +306,10 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
+    }
+
+    .text-slider {
+        top: 45vh !important;
     }
 
     .object1-left,
@@ -363,6 +375,10 @@
         font-size: 15px;
     }
 
+    .text-slider {
+        top: 40vh !important;
+    }
+
     .estate-section:hover {
         scale: none;
     }
@@ -425,4 +441,14 @@
     }
 
 
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

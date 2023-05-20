@@ -126,6 +126,7 @@ export default function Object1(props) {
                     <p>{language ? 'Cijena je fleksibilna' : 'The price is flexible'}</p>
                 </div>
             </div>
+            <div style={{ position: 'fixed', top: '62vh', marginLeft: '500px' }} className='text-slider'>Ostvarite svoj san o sopstvenoj nekretnini na moru, po još uvijek dobrim cijenama odaberite za sebe stan ili kuću na otoku Visu, u oazi netaknute prirode sa nekim od najljepših plaža na svijetu. Plaža Srebrna je 2006. godine izabrana za najljepšu plažu u Evropi. Kada je filmska industrija prepoznala potencijal, zašto ne biste i Vi. Na Otoku su se snimali razni filmovi među kojima je i 'Mamma mia'</div>
             <div className='object1-bottom'>
                 <p>360.000€</p>
                 <button className='object1-contact' onClick={handleContactUs}
