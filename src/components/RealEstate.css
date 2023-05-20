@@ -237,11 +237,18 @@
 }
 
 .text-slider {
+    position: absolute;
+    top: 62vh;
+    margin-left: 90vw;
     white-space: nowrap;
-    animation: slider 25s linear infinite;
+    animation: slider 30s linear infinite;
     background-color: gold;
     overflow: hidden;
     padding: 5px;
+}
+
+.text-slider p {
+    margin: 0;
 }
 
 .object1-main-img,
@@ -449,6 +456,6 @@
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-120%);
     }
 }
