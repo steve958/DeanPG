@@ -112,13 +112,14 @@ export default function RealEstate(props) {
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
                             <p className='price'>77.000€</p>
                         </span>
-                        <span className='estate-section'>
+                        <span className='estate-section-block'>
+                            <p style={{ position: 'absolute', fontSize: '28px', top: '10px' }}>{language ? 'uskoro' : 'soon'}</p>
                             <span className='building-icon'>
-                                <HiOutlineBuildingOffice2 color='gold' size='45' />
+                                <BsHouseDoor color='gold' size={45} />
                             </span>
                             <div className='object6'></div>
-                            <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
-                            <p className='price'>77.000€</p>
+                            <p>{language ? 'Komiža, najstarija kuća na Otoku Visu 105m²' : 'Komiža, the oldest house on the island of Vis 105m²'}</p>
+                            <p className='price'>800 godina stara</p>
                         </span>
                     </div>
                 </span>}

@@ -71,7 +71,7 @@
 }
 
 .estate-section {
-    width: 320px;
+    width: 400px;
     height: 320px;
     border: 2px solid gold;
     display: flex;
@@ -80,6 +80,23 @@
     justify-content: center;
     position: relative;
     text-align: center;
+}
+
+.estate-section-block {
+    width: 400px;
+    height: 320px;
+    border: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.estate-section-block p {
+    margin: 0;
+    color: whitesmoke;
 }
 
 .price {
@@ -96,6 +113,11 @@
     transition: all 0.5s;
     position: sticky;
     scale: 1.1;
+    cursor: pointer;
+}
+
+.estate-section-block:hover {
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -144,8 +166,8 @@
     border-radius: 10px;
 }
 
-.obejct6 {
-    background-image: url('../assets/starakuca.jpg');
+.object6 {
+    background-image: url('../assets/komiza.jpg');
     width: 90%;
     height: 70%;
     background-size: cover;
