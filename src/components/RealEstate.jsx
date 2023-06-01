@@ -113,7 +113,7 @@ export default function RealEstate(props) {
                             <p className='price'>77.000€</p>
                         </span>
                         <span className='estate-section-block'>
-                            <p style={{ position: 'absolute', fontSize: '28px', top: '10px' }}>{language ? 'uskoro' : 'soon'}</p>
+                            <p style={{ position: 'absolute', fontSize: '28px', top: '10px', backgroundColor: 'gold', padding: '5px', borderRadius: '5px', color: '#454545' }}>{language ? 'uskoro' : 'soon'}</p>
                             <span className='building-icon'>
                                 <BsHouseDoor color='gold' size={45} />
                             </span>
