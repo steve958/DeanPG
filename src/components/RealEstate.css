@@ -56,7 +56,6 @@
     align-items: center;
     overflow: auto;
     flex-wrap: wrap;
-
 }
 
 .house-icon {
@@ -138,6 +137,15 @@
 
 .object5 {
     background-image: url('../assets/stan-hvar/slika4.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.obejct6 {
+    background-image: url('../assets/starakuca.jpg');
     width: 90%;
     height: 70%;
     background-size: cover;

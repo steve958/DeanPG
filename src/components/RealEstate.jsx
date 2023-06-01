@@ -112,6 +112,14 @@ export default function RealEstate(props) {
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
                             <p className='price'>77.000€</p>
                         </span>
+                        <span className='estate-section'>
+                            <span className='building-icon'>
+                                <HiOutlineBuildingOffice2 color='gold' size='45' />
+                            </span>
+                            <div className='object6'></div>
+                            <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
+                            <p className='price'>77.000€</p>
+                        </span>
                     </div>
                 </span>}
             {objectOneClicked && <Object1
