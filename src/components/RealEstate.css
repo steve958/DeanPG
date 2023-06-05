@@ -463,6 +463,10 @@
         padding: 30px;
     }
 
+    .text-slider {
+        top: 62vh !important;
+    }
+
     .close-modal {
         top: 50px;
     }
@@ -483,6 +487,9 @@
         height: 20vh;
     }
 
+    .text-slider {
+        top: 70vh !important;
+    }
 
 }
 
