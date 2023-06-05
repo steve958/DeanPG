@@ -14,6 +14,12 @@
     font-weight: 600;
     color: #454545;
     animation: slideSideBar 1s 1;
+    background: linear-gradient(#d1eeea,
+            #a8dbd9,
+            #85c4c9,
+            #68abb8,
+            #4f90a6,
+            #3b738f);
 }
 
 .side-bar-container img {

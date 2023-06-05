@@ -6,8 +6,13 @@
     left: 3vw;
     width: 94vw;
     height: 85vh;
-    background-color: transparent;
-    backdrop-filter: blur(20px);
+    background: linear-gradient(#d1eeea,
+            #a8dbd9,
+            #85c4c9,
+            #68abb8,
+            #4f90a6,
+            #3b738f);
+    /* backdrop-filter: blur(20px); */
     border: 2px solid gold;
     z-index: 20;
     border-radius: 5px;
@@ -264,6 +269,7 @@
     font-size: 22px;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .text-slider {
