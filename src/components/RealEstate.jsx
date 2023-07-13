@@ -65,7 +65,7 @@ export default function RealEstate(props) {
                             </span>
                             <div className='object2'></div>
                             <span className='reserved-cover'>
-                                <p>{language ? 'REZERVISANO' : 'RESERVED'}</p>
+                                <p>{language ? 'REZERVIRANO' : 'RESERVED'}</p>
                             </span>
                             <p>{language ? '37m² - Otok Vis' : '37m² - Island of Vis'}</p>
                             <p className='price'>140.000€</p>
@@ -113,7 +113,7 @@ export default function RealEstate(props) {
                             </span>
                             <div className='object5'>
                                 <span className='sold-cover'>
-                                    <p>{language ? 'PRODATO' : 'SOLD'}</p>
+                                    <p>{language ? 'PRODANO' : 'SOLD'}</p>
                                 </span>
                             </div>
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
