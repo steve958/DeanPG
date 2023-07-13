@@ -55,7 +55,7 @@ export default function RealEstate(props) {
                         <span className='estate-section'
                             onClick={() => {
                                 setObjectOneClicked(false)
-                                setObjectTwoClicked(true)
+                                // setObjectTwoClicked(true)
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
@@ -64,6 +64,9 @@ export default function RealEstate(props) {
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
                             </span>
                             <div className='object2'></div>
+                            <span className='reserved-cover'>
+                                <p>{language ? 'REZERVISANO' : 'RESERVED'}</p>
+                            </span>
                             <p>{language ? '37m² - Otok Vis' : '37m² - Island of Vis'}</p>
                             <p className='price'>140.000€</p>
                         </span>
@@ -103,12 +106,16 @@ export default function RealEstate(props) {
                                 setObjectTwoClicked(false)
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(false)
-                                setObjectFiveClicked(true)
+                                // setObjectFiveClicked(true)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
                             </span>
-                            <div className='object5'></div>
+                            <div className='object5'>
+                                <span className='sold-cover'>
+                                    <p>{language ? 'PRODATO' : 'SOLD'}</p>
+                                </span>
+                            </div>
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
                             <p className='price'>77.000€</p>
                         </span>

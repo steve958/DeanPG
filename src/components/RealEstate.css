@@ -339,6 +339,44 @@
     scale: 1.1;
 }
 
+.sold-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    user-select: none;
+}
+
+.sold-cover p {
+    font-size: 50px;
+    position: relative;
+    top: 30%;
+    color: black;
+    transform: rotate(-30deg);
+}
+
+.reserved-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    user-select: none;
+}
+
+.reserved-cover p {
+    font-size: 50px;
+    position: relative;
+    top: 30%;
+    color: black;
+    transform: rotate(-30deg);
+}
+
 @media only screen and (max-width: 1500px) {
     .object1-main {
         width: 100%;
