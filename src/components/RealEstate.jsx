@@ -8,6 +8,7 @@ import Object2 from './Object2'
 import Object3 from './Object3'
 import Object4 from './Object4'
 import Object5 from './Object5'
+import Object6 from './Object6'
 
 export default function RealEstate(props) {
 
@@ -18,6 +19,7 @@ export default function RealEstate(props) {
     const [objectThreeClicked, setObjectThreeClicked] = useState(false)
     const [objectFourClicked, setObjectFourClicked] = useState(false)
     const [objectFiveClicked, setObjectFiveClicked] = useState(false)
+    const [objectSixClicked, setObjectSixClicked] = useState(false)
 
 
     useEffect(() => {
@@ -35,6 +37,7 @@ export default function RealEstate(props) {
                 && !objectThreeClicked
                 && !objectFourClicked
                 && !objectFiveClicked
+                && !objectSixClicked
                 && <span className='modal-content'>
                     <div className='estate-wrapper'>
                         <span className='estate-section'
@@ -44,6 +47,7 @@ export default function RealEstate(props) {
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
+                                setObjectSixClicked(false)
                             }}>
                             <span className='house-icon'>
                                 <BsHouseDoor color='gold' size={45} />
@@ -59,6 +63,7 @@ export default function RealEstate(props) {
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
+                                setObjectSixClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -77,6 +82,7 @@ export default function RealEstate(props) {
                                 setObjectThreeClicked(true)
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
+                                setObjectSixClicked(false)
                             }}>
                             <span className='house-icon'>
                                 <BsHouseDoor color='gold' size={45} />
@@ -92,6 +98,7 @@ export default function RealEstate(props) {
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(true)
                                 setObjectFiveClicked(false)
+                                setObjectSixClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -107,6 +114,7 @@ export default function RealEstate(props) {
                                 setObjectThreeClicked(false)
                                 setObjectFourClicked(false)
                                 // setObjectFiveClicked(true)
+                                setObjectSixClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -119,12 +127,29 @@ export default function RealEstate(props) {
                             <p>{language ? 'Stan-Hvar 24m² + 7,5m² teraca' : 'Apartment-Hvar 24m² + 7,5m² terrace'}</p>
                             <p className='price'>77.000€</p>
                         </span>
+                        <span className='estate-section'
+                            onClick={() => {
+                                setObjectOneClicked(false)
+                                setObjectTwoClicked(false)
+                                setObjectThreeClicked(false)
+                                setObjectFourClicked(false)
+                                // setObjectFiveClicked(true)
+                                setObjectSixClicked(true)
+                            }}>
+                            <span className='building-icon'>
+                                <HiOutlineBuildingOffice2 color='gold' size='45' />
+                            </span>
+                            <div className='object6'>
+                            </div>
+                            <p>{language ? 'Split-Riva-Varoš 50m²' : 'Split-Riva-Varoš 50m²'}</p>
+                            <p className='price'>310.000€</p>
+                        </span>
                         <span className='estate-section-block'>
                             <p style={{ position: 'absolute', fontSize: '28px', top: '10px', backgroundColor: 'gold', padding: '5px', borderRadius: '5px', color: '#454545' }}>{language ? 'uskoro' : 'soon'}</p>
                             <span className='building-icon'>
                                 <BsHouseDoor color='gold' size={45} />
                             </span>
-                            <div className='object6'></div>
+                            <div className='object7'></div>
                             <p>{language ? 'Komiža, najstarija kuća na Otoku Visu 105m²' : 'Komiža, the oldest house on the island of Vis 105m²'}</p>
                             <p className='price'>{language ? '800 godina stara' : '800 years old'}</p>
                         </span>
@@ -155,6 +180,12 @@ export default function RealEstate(props) {
             />}
             {objectFiveClicked && <Object5
                 setObjectFiveClicked={setObjectFiveClicked}
+                setRealEstateActive={setRealEstateActive}
+                setRealEstateContact={setRealEstateContact}
+                language={language}
+            />}
+             {objectSixClicked && <Object6
+                setObjectSixClicked={setObjectSixClicked}
                 setRealEstateActive={setRealEstateActive}
                 setRealEstateContact={setRealEstateContact}
                 language={language}
