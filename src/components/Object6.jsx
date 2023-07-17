@@ -64,7 +64,7 @@ export default function Object6(props) {
 
     return (<div className='object1-container'>
         <div className='object1-main'>
-            <span className='back-arrow' onClick={() => setObjectFiveClicked(false)}>
+            <span className='back-arrow' onClick={() => setObjectSixClicked(false)}>
                 <IoMdArrowRoundBack color='gold' size={55} />
             </span>
             <div className='object1-left'>
