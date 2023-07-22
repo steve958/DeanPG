@@ -51,6 +51,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
                                 setObjectSixClicked(false)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='house-icon'>
                                 <BsHouseDoor color='gold' size={45} />
@@ -67,6 +68,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
                                 setObjectSixClicked(false)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -86,6 +88,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(false)
                                 setObjectFiveClicked(false)
                                 setObjectSixClicked(false)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='house-icon'>
                                 <BsHouseDoor color='gold' size={45} />
@@ -102,6 +105,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(true)
                                 setObjectFiveClicked(false)
                                 setObjectSixClicked(false)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -118,6 +122,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(false)
                                 // setObjectFiveClicked(true)
                                 setObjectSixClicked(false)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
@@ -138,6 +143,7 @@ export default function RealEstate(props) {
                                 setObjectFourClicked(false)
                                 // setObjectFiveClicked(true)
                                 setObjectSixClicked(true)
+                                setObjectSevenClicked(false)
                             }}>
                             <span className='building-icon'>
                                 <HiOutlineBuildingOffice2 color='gold' size='45' />
