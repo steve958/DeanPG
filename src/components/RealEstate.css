@@ -181,6 +181,15 @@
 }
 
 .object7 {
+    background-image: url('../assets/vis-srebrna-plaza/main.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object8 {
     background-image: url('../assets/komiza.jpg');
     width: 90%;
     height: 70%;

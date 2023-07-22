@@ -9,6 +9,7 @@ import Object3 from './Object3'
 import Object4 from './Object4'
 import Object5 from './Object5'
 import Object6 from './Object6'
+import Object7 from './Object7'
 
 export default function RealEstate(props) {
 
@@ -20,6 +21,7 @@ export default function RealEstate(props) {
     const [objectFourClicked, setObjectFourClicked] = useState(false)
     const [objectFiveClicked, setObjectFiveClicked] = useState(false)
     const [objectSixClicked, setObjectSixClicked] = useState(false)
+    const [objectSevenClicked, setObjectSevenClicked] = useState(false)
 
 
     useEffect(() => {
@@ -38,6 +40,7 @@ export default function RealEstate(props) {
                 && !objectFourClicked
                 && !objectFiveClicked
                 && !objectSixClicked
+                && !objectSevenClicked
                 && <span className='modal-content'>
                     <div className='estate-wrapper'>
                         <span className='estate-section'
@@ -144,12 +147,30 @@ export default function RealEstate(props) {
                             <p>{language ? 'Split-Riva-Varoš 50m²' : 'Split-Riva-Varoš 50m²'}</p>
                             <p className='price'>310.000€</p>
                         </span>
+                        <span className='estate-section'
+                            onClick={() => {
+                                setObjectOneClicked(false)
+                                setObjectTwoClicked(false)
+                                setObjectThreeClicked(false)
+                                setObjectFourClicked(false)
+                                // setObjectFiveClicked(true)
+                                setObjectSixClicked(false)
+                                setObjectSevenClicked(true)
+                            }}>
+                            <span className='building-icon'>
+                                <BsHouseDoor color='gold' size='45' />
+                            </span>
+                            <div className='object7'>
+                            </div>
+                            <p>{language ? 'Vis-Srebrna plaža kuća sa 7 apartmana' : 'Vis-Srebrna plaža house with 7 apartments'}</p>
+                            <p className='price'>399.000€</p>
+                        </span>
                         <span className='estate-section-block'>
                             <p style={{ position: 'absolute', fontSize: '28px', top: '10px', backgroundColor: 'gold', padding: '5px', borderRadius: '5px', color: '#454545' }}>{language ? 'uskoro' : 'soon'}</p>
                             <span className='building-icon'>
                                 <BsHouseDoor color='gold' size={45} />
                             </span>
-                            <div className='object7'></div>
+                            <div className='object8'></div>
                             <p>{language ? 'Komiža, najstarija kuća na Otoku Visu 105m²' : 'Komiža, the oldest house on the island of Vis 105m²'}</p>
                             <p className='price'>{language ? '800 godina stara' : '800 years old'}</p>
                         </span>
@@ -186,6 +207,12 @@ export default function RealEstate(props) {
             />}
              {objectSixClicked && <Object6
                 setObjectSixClicked={setObjectSixClicked}
+                setRealEstateActive={setRealEstateActive}
+                setRealEstateContact={setRealEstateContact}
+                language={language}
+            />}
+            {objectSevenClicked && <Object7
+                setObjectSevenClicked={setObjectSevenClicked}
                 setRealEstateActive={setRealEstateActive}
                 setRealEstateContact={setRealEstateContact}
                 language={language}
