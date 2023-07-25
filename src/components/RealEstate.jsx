@@ -198,7 +198,7 @@ export default function RealEstate(props) {
                             </span>
                             <div className='object8'></div>
                             <p>{language ? 'Komiža, najstarija kuća na Otoku Visu 105m²' : 'Komiža, the oldest house on the island of Vis 105m²'}</p>
-                            <p className='price'>{language ? '800 godina stara' : '800 years old'}</p>
+                            <p className='price'>440.000€</p>
                         </span>
                     </div>
                 </span>}
