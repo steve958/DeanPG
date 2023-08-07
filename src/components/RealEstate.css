@@ -6,12 +6,13 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#d1eeea,
+    /* background: linear-gradient(#d1eeea,
             #a8dbd9,
             #85c4c9,
             #68abb8,
             #4f90a6,
-            #3b738f);
+            #3b738f); */
+    background-color: whitesmoke;
     z-index: 20;
     display: flex;
     flex-direction: column;
@@ -54,7 +55,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     overflow: auto;
     flex-wrap: wrap;
@@ -73,6 +74,9 @@
 }
 
 .estate-section {
+    margin: 10px;
+    background-color: #454545;
+    padding: 30px;
     width: 400px;
     height: 320px;
     border: 2px solid gold;
@@ -114,8 +118,9 @@
 .estate-section:hover {
     transition: all 0.5s;
     position: sticky;
-    scale: 1.1;
+    background-color: #848383;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .estate-section-block:hover {
@@ -195,6 +200,33 @@
     border-radius: 10px;
 }
 
+.object9 {
+    background-image: url('../assets/osijek-tenja/main.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object10 {
+    background-image: url('../assets/plisko-polje/main.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object11 {
+    background-image: url('../assets/vis-dobra-luka/slika1.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 .close-modal {
     position: absolute;
     right: 10px;
@@ -207,6 +239,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #454545;
 }
 
 .object1-main {

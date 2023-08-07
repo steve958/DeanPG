@@ -3,6 +3,7 @@ import "./RealEstate.css";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { BsHouseDoor } from "react-icons/bs";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import {MdOutlinePlace} from 'react-icons/md'
 import Object1 from "./Object1";
 import Object2 from "./Object2";
 import Object3 from "./Object3";
@@ -11,6 +12,9 @@ import Object5 from "./Object5";
 import Object6 from "./Object6";
 import Object7 from "./Object7";
 import Object8 from "./Object8";
+import Object9 from "./Object9";
+import Object10 from "./Object10";
+import Object11 from "./Object11";
 
 export default function RealEstate(props) {
   const {
@@ -28,6 +32,9 @@ export default function RealEstate(props) {
   const [objectSixClicked, setObjectSixClicked] = useState(false);
   const [objectSevenClicked, setObjectSevenClicked] = useState(false);
   const [objectEightClicked, setObjectEightClicked] = useState(false);
+  const [objectNineClicked, setObjectNineClicked] = useState(false)
+  const [objectTenClicked, setObjectTenClicked] = useState(false)
+  const [objectElevenClicked, setObjectElevenClicked] = useState(false)
 
   useEffect(() => {
     setSideBarActive(false);
@@ -48,7 +55,10 @@ export default function RealEstate(props) {
         !objectFiveClicked &&
         !objectSixClicked &&
         !objectSevenClicked &&
-        !objectEightClicked && (
+        !objectEightClicked &&
+        !objectNineClicked &&
+        !objectTenClicked &&
+        !objectElevenClicked && (
           <span className="modal-content">
             <div className="estate-wrapper">
               <span
@@ -62,6 +72,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false);
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="house-icon">
@@ -86,6 +99,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="building-icon">
@@ -109,6 +125,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="house-icon">
@@ -133,6 +152,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="building-icon">
@@ -157,6 +179,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="building-icon">
@@ -185,6 +210,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(true);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="building-icon">
@@ -207,6 +235,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(true);
                   setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 <span className="building-icon">
@@ -231,6 +262,9 @@ export default function RealEstate(props) {
                   setObjectSixClicked(false);
                   setObjectSevenClicked(false);
                   setObjectEightClicked(true);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
                 }}
               >
                 {/* <p style={{ position: 'absolute', fontSize: '28px', top: '10px', backgroundColor: 'gold', padding: '5px', borderRadius: '5px', color: '#454545' }}>{language ? 'uskoro' : 'soon'}</p> */}
@@ -244,6 +278,81 @@ export default function RealEstate(props) {
                     : "Komiža, the oldest house on the island of Vis 105m²"}
                 </p>
                 <p className="price">440.000€</p>
+              </span>
+              <span
+                className="estate-section"
+                onClick={() => {
+                  setObjectOneClicked(false);
+                  setObjectTwoClicked(false);
+                  setObjectThreeClicked(false);
+                  setObjectFourClicked(false);
+                  // setObjectFiveClicked(true)
+                  setObjectSixClicked(false);
+                  setObjectSevenClicked(false);
+                  setObjectEightClicked(false);
+                  setObjectNineClicked(true)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(false)
+                }}
+              >
+                <span className="building-icon">
+                  <BsHouseDoor color="gold" size="45" />
+                </span>
+                <div className="object9"></div>
+                <p>
+                  {language ? "Osijek-Tenja" : "Osijek-Tenja"}
+                </p>
+                <p className="price">63.000€</p>
+              </span>
+              <span
+                className="estate-section"
+                onClick={() => {
+                  setObjectOneClicked(false);
+                  setObjectTwoClicked(false);
+                  setObjectThreeClicked(false);
+                  setObjectFourClicked(false);
+                  // setObjectFiveClicked(true)
+                  setObjectSixClicked(false);
+                  setObjectSevenClicked(false);
+                  setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(true)
+                  setObjectElevenClicked(false)
+                }}
+              >
+                <span className="building-icon">
+                  <BsHouseDoor color="gold" size="45" />
+                </span>
+                <div className="object10"></div>
+                <p>
+                  {language ? "Otok Vis - Plisko Polje" : "Island of Vis - Plisko Polje"}
+                </p>
+                <p className="price">100.000€</p>
+              </span>
+              <span
+                className="estate-section"
+                onClick={() => {
+                  setObjectOneClicked(false);
+                  setObjectTwoClicked(false);
+                  setObjectThreeClicked(false);
+                  setObjectFourClicked(false);
+                  // setObjectFiveClicked(true)
+                  setObjectSixClicked(false);
+                  setObjectSevenClicked(false);
+                  setObjectEightClicked(false);
+                  setObjectNineClicked(false)
+                  setObjectTenClicked(false)
+                  setObjectElevenClicked(true)
+                }}
+              >
+                <span className="building-icon">
+                  <MdOutlinePlace color="gold" size="45" />
+                </span>
+                <div className="object11"></div>
+                <p>
+                  {language ? "Plac - Otok Vis - Dobra Luka" : "Peace of land - Island of Vis - Dobra Luka"}
+                </p>
+                <p className="price">93.000€</p>
               </span>
             </div>
           </span>
@@ -307,6 +416,30 @@ export default function RealEstate(props) {
       {objectEightClicked && (
         <Object8
           setObjectEightClicked={setObjectEightClicked}
+          setRealEstateActive={setRealEstateActive}
+          setRealEstateContact={setRealEstateContact}
+          language={language}
+        />
+      )}
+      {objectNineClicked && (
+        <Object9
+          setObjectNineClicked={setObjectNineClicked}
+          setRealEstateActive={setRealEstateActive}
+          setRealEstateContact={setRealEstateContact}
+          language={language}
+        />
+      )}
+      {objectTenClicked && (
+        <Object10
+          setObjectTenClicked={setObjectTenClicked}
+          setRealEstateActive={setRealEstateActive}
+          setRealEstateContact={setRealEstateContact}
+          language={language}
+        />
+      )}
+      {objectElevenClicked && (
+        <Object11
+          setObjectElevenClicked={setObjectElevenClicked}
           setRealEstateActive={setRealEstateActive}
           setRealEstateContact={setRealEstateContact}
           language={language}
