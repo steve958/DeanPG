@@ -12,10 +12,7 @@
             #68abb8,
             #4f90a6,
             #3b738f);
-    /* backdrop-filter: blur(20px); */
-    border: 2px solid gold;
     z-index: 20;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
