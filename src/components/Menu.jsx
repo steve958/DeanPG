@@ -2,8 +2,10 @@ import React from "react";
 import { useState } from "react";
 import './Menu.css'
 import { TfiHummer } from 'react-icons/tfi'
+import { useNavigate } from "react-router-dom";
 
 const Menu = (props) => {
+    // const navigate = useNavigate();
 
     const { setRealEstateActive, language, setLanguage } = props
 
@@ -26,24 +28,18 @@ const Menu = (props) => {
 
     function handleRealEstateClick() {
         setRealEstateActive(true)
+        // navigate('/nekretnine')
     }
 
     return <div className="menu-container">
-        <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('pocetna')} >{language ? 'Početna' : 'Home'}
-            {hoverItem === 'pocetna' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('usluge')} onClick={handleProjectsClick}>{language ? 'Naše usluge' : 'Our services'}
             {hoverItem === 'usluge' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('o nama')} onClick={handleAboutClick}>{language ? 'O nama' : 'About us'}
             {hoverItem === 'o nama' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
+        <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('realestate')} onClick={handleRealEstateClick}>{language ? 'Prodaja nekretnina' : 'Real Estate for Sale'}
+            {hoverItem === 'realestate' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
         <div className="menu-item" onMouseLeave={() => setHoverItem('')} onMouseEnter={() => setHoverItem('kontakt')} onClick={handleContactClick}>{language ? 'Kontakt' : 'Contact'}
             {hoverItem === 'kontakt' && <span className="hummer"><TfiHummer size={50} color='gold' /></span>}</div>
-        <div className="realestate menu-item"
-            onClick={handleRealEstateClick}>
-            <p>
-                {language ? 'Prodaja nekretnina' : 'Real Estate for Sale'}
-            </p>
-            {/* <p className="immobilien">Real Estate / Immobilien</p> */}
-        </div>
         <div className="language-wrapper">
             <p>{language ? 'Jezik:' : 'Language:'}</p>
             <span>

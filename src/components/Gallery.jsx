@@ -1,9 +1,9 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 
 export default function Gallery() {
+    
     return (
         <div className="carousel-container">
-            <Suspense fallback={<p>loading...</p>}>
                 <div className="img1"></div>
                 <div className="img2"></div>
                 <div className="img3"></div>
@@ -24,8 +24,6 @@ export default function Gallery() {
                 <div className="img18"></div>
                 <div className="img19"></div>
                 <div className="img20"></div>
-            </Suspense>
-
         </div>
     )
 }

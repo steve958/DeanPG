@@ -1,11 +1,11 @@
 .realestate-modal {
     position: fixed;
     margin: 10px;
-    top: 10vh;
+    top: 0;
     margin: 0 auto;
-    left: 3vw;
-    width: 94vw;
-    height: 85vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(#d1eeea,
             #a8dbd9,
             #85c4c9,
@@ -292,7 +292,7 @@
 
 .text-slider {
     position: absolute;
-    top: 62vh;
+    top: 72vh;
     margin-left: 90vw;
     white-space: nowrap;
     animation: slider 30s linear infinite;

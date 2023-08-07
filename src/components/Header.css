@@ -95,14 +95,31 @@
     }
 
     .logo {
-        left: 0;
         top: 15vh;
         width: 250px;
         height: 250px;
+        left: 0;
+    }
+
+    .middle {
+        border: none;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1120px) {
+    .logo {
+        width: 250px;
+        left: calc((100vw - 250px) / 2);
+    }
+}
+
+
+@media only screen and (max-width: 635px) {
+
+    .informations-container {
+        display: none;
+    }
+
     .info-text {
         font-size: 10px;
         display: flex;
@@ -118,16 +135,14 @@
     }
 
     .logo {
-        top: 9vh;
-        width: 140px;
-        height: 140px;
-        left: 10vw;
+        top: 8vh;
+        width: 150px;
+        left: calc((100vw - 150px) / 2);
     }
-
 
     .social-icons-container {
         width: 40vw;
-        top: 32vh;
+        top: 34vh;
         left: 30vw;
     }
 }

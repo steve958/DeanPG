@@ -69,7 +69,7 @@ export default function Object8(props) {
   return (
     <div className="object1-container">
       <div className="object1-main">
-        <span className="back-arrow" onClick={() => setObjectOneClicked(false)}>
+        <span className="back-arrow" onClick={() => setObjectEightClicked(false)}>
           <IoMdArrowRoundBack color="gold" size={55} />
         </span>
         <div className="object1-left">
