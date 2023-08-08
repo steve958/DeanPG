@@ -227,6 +227,24 @@
     border-radius: 10px;
 }
 
+.object12 {
+    background-image: url('../assets/vis-plac/slika1.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.object13 {
+    background-image: url('../assets/apartmani/main.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 .close-modal {
     position: absolute;
     right: 10px;
@@ -318,6 +336,7 @@
     flex-direction: column;
     justify-content: center;
     color: white;
+    background-color: #454545;
 }
 
 .text-slider {
