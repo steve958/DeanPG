@@ -245,6 +245,15 @@
     border-radius: 10px;
 }
 
+.object14 {
+    background-image: url('../assets/vis-apartman/main.jpg');
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 .close-modal {
     position: absolute;
     right: 10px;
