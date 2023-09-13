@@ -260,7 +260,7 @@ export default function RealEstate(props) {
                   setObjectFourClicked(false);
                   // setObjectFiveClicked(true)
                   setObjectSixClicked(false);
-                  setObjectSevenClicked(true);
+                  // setObjectSevenClicked(true);
                   setObjectEightClicked(false);
                   setObjectNineClicked(false)
                   setObjectTenClicked(false)
@@ -273,7 +273,11 @@ export default function RealEstate(props) {
                 <span className="building-icon">
                   <BsHouseDoor color="gold" size="45" />
                 </span>
-                <div className="object7"></div>
+                <div className="object7">
+                  <span className="sold-cover">
+                    <p>{language ? "PRODANO" : "SOLD"}</p>
+                  </span>
+                </div>
                 <p>
                   {language
                     ? "Vis-Srebrna plaža kuća sa 7 apartmana"
