@@ -157,7 +157,7 @@ export default function RealEstate(props) {
                     ? "Kuća Kut-Valica Neuseljavana"
                     : "Kut-Rukavac No previous owners"}
                 </p>
-                <p className="price">380.000€</p>
+                <p className="price">330.000€</p>
               </span>
               <span
                 className="estate-section"
