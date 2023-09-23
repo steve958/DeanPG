@@ -98,7 +98,7 @@ export default function RealEstate(props) {
                     ? "Novogradnja - Vis-Rukavac, Srebrna plaža"
                     : "New House - Vis-Rukavac, Srebrna plaža"}
                 </p>
-                <p className="price">360.000€</p>
+                <p className="price">340.000€</p>
               </span>
               <span
                 className="estate-section"

@@ -128,7 +128,7 @@ export default function Object1(props) {
             </div>
             <div className='text-slider'>{language ? <p>Kad može Hollywood, možete i Vi! Ostvarite svoj san o sopstvenoj nekretnini na moru, po još uvijek dobrim cijenama odaberite za sebe stan ili kuću na Otoku Visu, u oazi netaknute prirode sa nekim od najljepših plaža na svijetu. Plaža Srebrna je 2006. godine izabrana za najljepšu plažu u Evropi. Kada je filmska industrija prepoznala potencijal, zašto ne biste i Vi. Na Otoku su se snimali razni filmovi među kojima je i 'Mamma mia'</p> : <p>When Hollywood can do it, so can you! Realize your dream of your own property by the sea, choose an apartment or house on the island of Vis, in an oasis of untouched nature with some of the most beautiful beaches in the world, at still good prices. In 2006, Srebrna beach was chosen as the most beautiful beach in Europe. When the film industry recognized the potential, why not you? Various films were shot on the island, including 'Mamma Mia'</p>}</div>
             <div className='object1-bottom'>
-                <p>360.000€</p>
+                <p>340.000€</p>
                 <button className='object1-contact' onClick={handleContactUs}
                 >{language ? 'kontaktirajte nas' : 'contact us'}</button>
             </div>
